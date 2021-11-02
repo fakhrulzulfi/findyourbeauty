@@ -37,7 +37,7 @@
                         <a class="nav-link mr-2" href="../views/view_article.php">Articles</a>
                     </li>
                     
-                    <?php if( $_SESSION['r'] == 'admin' ) : ?>
+                    <?php if( isset($_SESSION['r']) && $_SESSION['r'] == 'admin' ) : ?>
                         <li class="nav-item dropdown mr-2">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Settings

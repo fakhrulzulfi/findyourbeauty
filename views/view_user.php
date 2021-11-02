@@ -1,7 +1,7 @@
 <?php 
     require_once('../init.php');
 
-    if( $_SESSION['r'] != 'admin' ) {
+    if( isset($_SESSION['r']) && $_SESSION['r'] != 'admin' ) {
       header("Location: view_article.php");
     }
 

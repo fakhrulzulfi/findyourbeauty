@@ -83,7 +83,7 @@
                                 </p>
                             </div>
                             <div class="col-sm-6">
-                                <?php if( ($_SESSION['r'] == 'admin') || ($_SESSION['username'] == $review['user_name']) ) : ?>
+                                <?php if( ( isset($_SESSION['r']) && $_SESSION['r'] == 'admin') || ( isset($_SESSION['username']) && $_SESSION['username'] == $review['user_name']) ) : ?>
                                     <!-- three dots -->
                                     <div class="dropdown pull-right">
                                         <button class="btn btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">

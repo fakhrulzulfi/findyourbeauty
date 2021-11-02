@@ -16,7 +16,7 @@
                     </div>
 
                     <!-- Button trigger modal -->
-                    <?php if( $_SESSION["r"] == "admin" ) :?>
+                    <?php if( isset($_SESSION["r"]) && $_SESSION["r"] == "admin" ) :?>
                         <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">Buat Artikel</button>
                     <?php endif; ?>
 
@@ -85,7 +85,7 @@
                                 
                                 <div class="col-md-1">
                                     <!-- ICONS THREE DOTS -->
-                                    <?php if( $_SESSION['r'] == 'admin' ) : ?>
+                                    <?php if( isset($_SESSION['r']) && $_SESSION['r'] == 'admin' ) : ?>
                                         <div class="dropdown">
                                             <a class="btn btn-sm" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float:right;">
                                                 <i class="fa fa-ellipsis-h fa-lg"></i>
